@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, abort
 from prometheus_flask_exporter import PrometheusMetrics
 from random import randint
 
@@ -12,7 +12,7 @@ def hello_world():
     if randint(0, 1) == 0:
         return "<h1>Hello, World!</h1>"
     else:
-        return 500
+        abort(404)
 
 
 if __name__ == '__main__':
