@@ -130,3 +130,6 @@ dmypy.json
 
 # hints for demo
 hints
+
+# .idea dir
+.idea
