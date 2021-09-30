@@ -14,13 +14,6 @@ spec:
     spec:
       containers:
       - name: server
-        image: fordockerfor/demo:v1
-        resources:
-          limits:
-            cpu: 100m
-            memory: 256Mi
-          requests:
-            cpu: 100m
-            memory: 256Mi
+        image: fordockerfor/demo:lol
         ports:
         - containerPort: 5000
